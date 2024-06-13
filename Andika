@@ -1,12 +1,51 @@
-<?php
-
-$server = "localhost";
-$user = "root";
-$password ="";
-$nama_databases="wajiih_pplg2";
-
-$db= mysqli_connect($server,$user,$password,$nama_databases);
-
-if(!$db ){
-    die("Gagal terhubung dengan databases:".mysqli_connect_eror());
-}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    height: 130px;
+    background: linear-gradient(90deg, blue, black);
+  }
+  
+  .hero {
+    height: 400px;
+    background-image: url('coding.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 3px solid black;
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 10px;
+    animation: blink-animation 1s step-end infinite;
+  }
+  
+  @keyframes blink-animation {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .kuri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main {
+    border-top: 3px solid rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(11, 155, 23), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+  }
